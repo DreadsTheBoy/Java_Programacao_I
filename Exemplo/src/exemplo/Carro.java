@@ -16,6 +16,63 @@ public class Carro {
 
     int numeroPortas, anoFabricacao, anoModelo;
 
+    public Carro() {
+    }
+
+    public Carro(String placa, double valor) {
+
+        this.placa = placa;
+
+        this.valor = valor;
+
+    }
+
+    public Carro(String modelo, String cor, String placa, double valor) {
+
+        this.modelo = modelo;
+
+        this.cor = cor;
+
+        this.placa = placa;
+
+        this.valor = valor;
+
+    }
+
+    public Carro(String fabricante, String modelo, String cor, String placa, double valor) {
+
+        this.fabricante = fabricante;
+
+        this.modelo = modelo;
+
+        this.cor = cor;
+
+        this.placa = placa;
+
+        this.valor = valor;
+
+    }
+
+    public Carro(String fabricante, String modelo, String cor, String placa, double valor, int numeroPortas, int anoFabricacao, int anoModelo) {
+
+        this.fabricante = fabricante;
+
+        this.modelo = modelo;
+
+        this.cor = cor;
+
+        this.placa = placa;
+
+        this.valor = valor;
+
+        this.numeroPortas = numeroPortas;
+
+        this.anoFabricacao = anoFabricacao;
+
+        this.anoModelo = anoModelo;
+
+    }
+
     public String getFabricante() {
 
         return fabricante;
@@ -145,8 +202,6 @@ public class Carro {
     }
 
     public void imprimir() {
-
-        System.out.println("------------------------------------");
 
         System.out.println("Fabricante : " + getFabricante());
 
